@@ -1,0 +1,36 @@
+.desc-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+
+  .avatar-container {
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+
+  .card-description {
+    color: var(--text-normal-color);
+    h3 {
+      margin-top: 12px;
+      margin-bottom: 4px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .card-meta {
+      dl, dt, dd {
+        display: inline;
+      }
+    }
+  }
+
+
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}

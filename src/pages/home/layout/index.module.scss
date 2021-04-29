@@ -1,0 +1,14 @@
+
+.layout {
+
+  .content-layout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    min-height: 100vh;
+    .content-container {
+      flex: 1 1 auto;
+      display: flex;
+    }
+  }
+}

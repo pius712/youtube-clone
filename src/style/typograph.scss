@@ -1,0 +1,29 @@
+:root {
+
+
+}
+
+
+body {
+  --main-bg-color : #181818;;
+  --header-bg-color: hsl(0, 0%, 18.82%);
+  --sidebar-bg-color: hsl(0, 0%, 18.82%);
+  --text-title-color: #ffffff;
+  --text-normal-color : #ffffff;
+  --text-sub-color: #ffffff;
+  --button-bg-color: hsla(0, 0%, 100%, .08);
+  --icon-bg-color: #909090;
+
+  --text-normal-size: 16px;
+  --text-sm-size: 14px;
+  --text-xm-size: 12px;
+  --text-lg-size: 18px;
+}
+
+body.light {
+
+}
+
+body.dark{
+
+}

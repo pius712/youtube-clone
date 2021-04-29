@@ -1,0 +1,17 @@
+.ratio-image {
+  height: 0px;
+
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &.rect{
+    padding-bottom: 100%;
+  }
+  &.wide {
+    padding-bottom: 56.25%;
+  }
+  &.default  {
+    padding-bottom: 75%;
+  };
+}

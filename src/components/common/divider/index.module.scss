@@ -1,0 +1,17 @@
+.divider {
+
+  &.dot {
+    &:after {
+      content: "•";
+      margin: 0 4px;
+    }
+  }
+  &.horizontal {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 0 4px;
+  }
+  &.vertical {
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 4px 0;
+  }
+}
