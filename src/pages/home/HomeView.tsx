@@ -3,86 +3,25 @@ import styles from 'pages/home/HomeView.module.scss';
 import classNames from 'classnames/bind';
 
 import VideoCardList, { Video } from 'components/video/VideoCardList';
+import MovieSection from 'pages/home/layout/MovieSesction';
+import VideoSection from 'pages/home/layout/VideoSection';
+import MovieCardList from 'components/movie/MovieCardList';
+import { movies, videos } from 'pages/home/mock';
 
 const cx = classNames.bind(styles);
-const videos: Video[] = [
-  {
-    id: 1,
-    title: 'hi1',
-    desc: 'hi1',
-    uploader: 'hi1',
-    views: 10,
-    createdAt: '2021-01-01',
-    thumbnailSrc: '',
-    thumbnailAlt: '',
-    avatarSrc: '',
-    avatarAlt: '',
-  },
-  {
-    id: 1,
-    title: 'hi1',
-    desc: 'hi1',
-    uploader: 'hi1',
-    views: 10,
-    createdAt: '2021-01-01',
-    thumbnailSrc: '',
-    thumbnailAlt: '',
-    avatarSrc: '',
-    avatarAlt: '',
-  },
-  {
-    id: 1,
-    title: 'hi1',
-    desc: 'hi1',
-    uploader: 'hi1',
-    views: 10,
-    createdAt: '2021-01-01',
-    thumbnailSrc: '',
-    thumbnailAlt: '',
-    avatarSrc: '',
-    avatarAlt: '',
-  },
-  {
-    id: 1,
-    title: 'hi1',
-    desc: 'hi1',
-    uploader: 'hi1',
-    views: 10,
-    createdAt: '2021-01-01',
-    thumbnailSrc: '',
-    thumbnailAlt: '',
-    avatarSrc: '',
-    avatarAlt: '',
-  },
-  {
-    id: 1,
-    title: 'hi1',
-    desc: 'hi1',
-    uploader: 'hi1',
-    views: 10,
-    createdAt: '2021-01-01',
-    thumbnailSrc: '',
-    thumbnailAlt: '',
-    avatarSrc: '',
-    avatarAlt: '',
-  },
-  {
-    id: 1,
-    title: 'hi1',
-    desc: 'hi1',
-    uploader: 'hi1',
-    views: 10,
-    createdAt: '2021-01-01',
-    thumbnailSrc: '',
-    thumbnailAlt: '',
-    avatarSrc: '',
-    avatarAlt: '',
-  },
-];
+
 const HomeView: React.FC = () => {
   return (
     <main className={cx('main-container')}>
-      <VideoCardList contents={videos} />
+      <VideoSection>
+        <VideoCardList contents={videos} />
+      </VideoSection>
+      <MovieSection>
+        <MovieCardList contents={movies} />
+      </MovieSection>
+      <VideoSection>
+        <VideoCardList contents={videos} />
+      </VideoSection>
     </main>
   );
 };
